@@ -14,7 +14,7 @@ For layouts, use fb2k's layout feature. \
 **libfootheme does not provide compatibility with .fth/.fcl files.**
 
 ```bash
-curl https://naomisphere.github.io/libfootheme/installer.sh | sh
+curl https://naomisphere.github.io/libfootheme/install.sh | sh
 ```
 
 This script will fully install libfootheme (feel free to check the script beforehand)
@@ -31,3 +31,9 @@ To interact with libfootheme, use the **Theme** menu bar item (if you don't see 
 To permanently install libfootheme, run ```make install```
 
 This installs ```libfootheme.dylib``` to ```fb2k```/Contents/Frameworks and modifies the ```Info.plist``` to hook it on launch using ```DYLD_INSERT_LIBRARIES``` (this won't work if the executable is launched directly - in that case manually set ```DYLD_INSERT_LIBRARIES=path/to/libfootheme.dylib```)
+
+## Uninstalling
+```make uninstall``` or:
+```bash
+curl https://naomisphere.github.io/libfootheme/uninstall.sh | sh
+```
