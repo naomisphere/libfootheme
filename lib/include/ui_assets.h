@@ -16,6 +16,8 @@ typedef struct {
 } IconFile;
 
 /* list of non-nib (standard image) files */
+// note: it *may* be possible to modify the nib files? I haven't
+// looked too much into it and all nib decomp tools seem to be ancient. 
 static IconFile iconFiles[] = {
     {@"btn-play256.png", @"Play Button"},
     {@"btn-pause256.png", @"Pause Button"},
